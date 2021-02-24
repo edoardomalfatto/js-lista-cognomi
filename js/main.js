@@ -7,8 +7,12 @@ var cognomeUtente;
 cognomeUtente=prompt("Inserisci il tuo cognome");
 console.log(cognomeUtente);
 
+//trasformo il cognome con la prima lettera maiuscola
+var CognomeCapitalized = cognomeUtente.charAt(0).toUpperCase() + cognomeUtente.slice(1);
+console.log(CognomeCapitalized);
+
 //aggiungo il cognome nella var disordinata
-cognomiDisordinati.push(cognomeUtente);
+cognomiDisordinati.push(CognomeCapitalized);
 console.log(cognomiDisordinati);
 
 //creo un duplicato della lista disordinata
@@ -21,7 +25,7 @@ console.log(duplicatoCognomiDisordinati);
 
 //alert con posizione del nuovo aggiunto
 for (var i = 0; i < duplicatoCognomiDisordinati.length; i++) {
-    if (duplicatoCognomiDisordinati[i] == cognomeUtente) {
+    if (duplicatoCognomiDisordinati[i] == CognomeCapitalized) {
         alert("L'ordine di nome utente è " + (i+1));
     }
 };
