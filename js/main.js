@@ -30,4 +30,8 @@ for (var i = 0; i < duplicatoCognomiDisordinati.length; i++) {
     }
 };
 
+for (var i = 0; i < duplicatoCognomiDisordinati.length; i++) {
+    document.getElementById("lista").innerHTML += "<li>" + duplicatoCognomiDisordinati[i] + "</li>";
+};
+
 
