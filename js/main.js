@@ -30,6 +30,7 @@ for (var i = 0; i < duplicatoCognomiDisordinati.length; i++) {
     }
 };
 
+//stampo lista su schermo
 for (var i = 0; i < duplicatoCognomiDisordinati.length; i++) {
     document.getElementById("lista").innerHTML += "<li>" + duplicatoCognomiDisordinati[i] + "</li>";
 };
